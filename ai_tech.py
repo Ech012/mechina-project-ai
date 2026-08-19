@@ -3,7 +3,6 @@ import os
 import requests
 
 DB_FILE = "data.json"
-HF=  ""
 MODEL = "openai/gpt-oss-120b"
 API_URL = "https://router.huggingface.co/v1/chat/completions"
 
