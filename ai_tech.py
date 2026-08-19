@@ -3,7 +3,7 @@ import os
 import requests
 
 DB_FILE = "data.json"
-HF_TOKEN =  ""
+HF=  ""
 MODEL = "openai/gpt-oss-120b"
 API_URL = "https://router.huggingface.co/v1/chat/completions"
 
@@ -16,11 +16,11 @@ def load_data():
 
 
 def ask_model(prompt):
-    if not HF_TOKEN:
-        raise RuntimeError("HF_TOKEN environment variable is not set.")
+    if not HF:
+        raise RuntimeError("HF environment variable is not set.")
 
     headers = {
-        "Authorization": f"Bearer {HF_TOKEN}",
+        "Authorization": f"Bearer {HF}",
         "Content-Type": "application/json",
     }
     payload = {
