@@ -1,30 +1,65 @@
 import socket
 import threading
+import json
+import os
 
-# Choose a nickname
-nickname = input("Choose your nickname: ")
+nickname = input("Hello Teacher, what is your name: ")
+region = input("region: ")
+grades_input = input("Enter your grades you are teaching (comma separated, e.g. 1,2,3): ")
 
-# Connect to server
+grades = [g.strip() for g in grades_input.split(",") if g.strip()]
+
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('127.0.0.1', 55555))
 
+json_lock = threading.Lock()
+
+DB_FILE = "data.json"
+
+
+def save_message_to_db(message_text):
+    with json_lock:
+        if os.path.exists(DB_FILE):
+            with open(DB_FILE, "r", encoding="utf-8") as f:
+                try:
+                    db = json.load(f)
+                except json.JSONDecodeError:
+                    db = {}
+        else:
+            db = {}
+
+        db.setdefault(region, {})
+
+        for g in grades:
+            db[region].setdefault(g, [])
+            db[region][g].append(message_text)
+
+        with open(DB_FILE, "w", encoding="utf-8") as f:
+            json.dump(db, f, indent=4, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+    print("Written to disk successfully in real-time!")
+
+
 def receive_messages():
-    """Listens to the server for incoming messages."""
     while True:
         try:
             message = client.recv(1024).decode('utf-8')
+            if not message:
+                print("Server closed connection.")
+                client.close()
+                break
             if message == 'NICK':
                 client.send(nickname.encode('utf-8'))
             else:
-                print(message)
-        except:
-            # Close connection when error occurs
-            print("An error occurred! Disconnecting...")
+                print(f"Received: {message}")
+        except Exception as e:
+            print(f"An error occurred in receiver: {e}")
             client.close()
             break
 
+
 def send_messages():
-    """Prompts user for input and sends it to the server."""
     while True:
         try:
             text = input("")
@@ -33,10 +68,12 @@ def send_messages():
                 break
             message = f"{nickname}: {text}"
             client.send(message.encode('utf-8'))
-        except:
+            save_message_to_db(message)
+        except Exception as e:
+            print(f"An error occurred in sender: {e}")
             break
 
-# Start threads for simultaneous receiving and sending
+
 receive_thread = threading.Thread(target=receive_messages)
 receive_thread.start()
 
