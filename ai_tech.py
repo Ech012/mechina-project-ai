@@ -3,7 +3,7 @@ import os
 import requests
 
 DB_FILE = "data.json"
-HF_TOKEN =  "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"
+HF_TOKEN =  ""
 MODEL = "openai/gpt-oss-120b"
 API_URL = "https://router.huggingface.co/v1/chat/completions"
 
