@@ -3,7 +3,7 @@ import socket
 
 # Now this Host is the IP address of the Server, over which it is running.
 # I've user my localhost.
-host = "192.168.2.104"
+host = "127.0.0.1"
 port = 5555  # Choose any random port which is not so common (like 80)
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
