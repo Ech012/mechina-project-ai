@@ -7,8 +7,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+<<<<<<< HEAD
   <component name="PackageRequirementsSettings" />
   <component name="PyDocumentationSettings" />
   <component name="ReSTService" />
   <component name="TestRunnerService" />
+=======
+>>>>>>> itamar
 </module>
