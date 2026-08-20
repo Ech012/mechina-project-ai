@@ -21,7 +21,6 @@ with splash_placeholder.container():
             0% { opacity: 0; transform: translateY(15px); }
             100% { opacity: 1; transform: translateY(0); }
         }
-        /* הפעלת האנימציה על כל מה שנמצא בתוך קונטיינר הספלאש */
         [data-testid="stVerticalBlock"] > div {
             animation: fadeIn 1.8s ease-out forwards;
         }

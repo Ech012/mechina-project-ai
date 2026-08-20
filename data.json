@@ -1,110 +1,66 @@
 {
     "North": {
-        "0": [],
-        "1": [
-            "itamar: Hello",
-            "itamar: my",
-            "itamar: name",
-            "itamar: is"
-        ],
-        "2": [
-            "itamar: Hello",
-            "itamar: my",
-            "itamar: name",
-            "itamar: is"
-        ],
-        "3": [
-            "itamar: Hello",
-            "itamar: my",
-            "itamar: name",
-            "itamar: is"
-        ],
-        "4": [],
-        "5": [],
-        "6": [
-            "asd: asdasd",
-            "asd: sdsd",
-            "asd: dsdsd",
-            "asd: asd",
-            "asd: asd"
-        ],
-        "7": [
-            "asd: asdasd",
-            "asd: sdsd",
-            "asd: dsdsd",
-            "asd: asd",
-            "asd: asd"
-        ],
-        "8": [
-            "asd: asdasd",
-            "asd: sdsd",
-            "asd: dsdsd",
-            "asd: asd",
-            "asd: asd"
-        ],
-        "9": [],
-        "10": [],
-        "11": []
+        "ז": [
+            "yosi: hello]"
+        ]
     },
     "Center": {
-        "0": [],
-        "1": [
-            "assdf: Hello"
+        "ז": [
+            "דגכדגכלחדגכלחדגכ: דגכדגכ",
+            "דגכדגכלחדגכלחדגכ: ארעעככטכר"
         ],
-        "2": [
-            "assdf: Hello"
+        "ח": [
+            "דגכדגכלחדגכלחדגכ: דגכדגכ",
+            "דגכדגכלחדגכלחדגכ: ארעעככטכר"
         ],
         "3": [
-            "assdf: Hello"
+            "sdfsdf: sdfdsf",
+            "sdfsdf: sfdsdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: df",
+            "sdfsdf: df",
+            "sdfsdf: df",
+            "YosiYosi: asdasd",
+            "YosiYosi: sdfsdf",
+            "sdfsdf: sdHelooooooooooooo"
         ],
         "4": [
-            "assdf: Hello"
+            "sdfsdf: sdfdsf",
+            "sdfsdf: sfdsdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: df",
+            "sdfsdf: df",
+            "sdfsdf: df",
+            "YosiYosi: asdasd",
+            "YosiYosi: sdfsdf",
+            "sdfsdf: sdHelooooooooooooo"
         ],
         "5": [
-            "assdf: Hello"
+            "sdfsdf: sdfdsf",
+            "sdfsdf: sfdsdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: sdf",
+            "sdfsdf: df",
+            "sdfsdf: df",
+            "sdfsdf: df"
         ],
-        "6": [
-            "assdf: Hello"
+        "1": [
+            "YosiYosi: asdasd",
+            "YosiYosi: sdfsdf",
+            "sdfsdf: sdHelooooooooooooo"
         ],
-        "7": [
-            "assdf: Hello"
-        ],
-        "8": [
-            "assdf: Hello"
-        ],
-        "9": [
-            "assdf: Hello"
-        ],
-        "10": [],
-        "11": []
-    },
-    "South": {
-        "0": [],
-        "1": [],
-        "2": [],
-        "3": [],
-        "4": [
-            "Popopo: Beat up ",
-            "Popopo: poop"
-        ],
-        "5": [
-            "Popopo: Beat up ",
-            "Popopo: poop"
-        ],
-        "6": [
-            "Popopo: Beat up ",
-            "Popopo: poop"
-        ],
-        "7": [
-            "Popopo: Beat up ",
-            "Popopo: poop"
-        ],
-        "8": [
-            "Popopo: Beat up ",
-            "Popopo: poop"
-        ],
-        "9": [],
-        "10": [],
-        "11": []
+        "2": [
+            "YosiYosi: asdasd",
+            "YosiYosi: sdfsdf",
+            "sdfsdf: sdHelooooooooooooo"
+        ]
     }
 }
